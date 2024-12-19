@@ -60,12 +60,8 @@ public class Sorting {
         int arr [] = {3,6,2,1,8,7,4,8,3,1};
         selectionSort(arr);
         printArray(arr);
-
     }
 }
-
-
-
 
 //Insertion Sort in Java
 public class Sorting {
@@ -108,6 +104,51 @@ public class Sorting {
 
 
 
+<<<<<<< HEAD
+
+//Insertion Sort in Java
+public class Sorting {
+    public static void main(String[] args) {
+        int[] array = {29, 10, 14, 37, 13};
+
+        System.out.println("Original Array:");
+        printArray(array);
+
+        insertionSort(array);
+
+        System.out.println("\nSorted Array:");
+        printArray(array);
+    }
+
+    // Method to sort the array using Insertion Sort
+    public static void insertionSort(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int key = array[i];
+            int j = i - 1;
+
+            // Shift elements of the array that are greater than the key
+            // to one position ahead of their current position
+            while (j >= 0 && array[j] > key) {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = key;
+        }
+    }
+
+    // Helper method to print the array
+    public static void printArray(int[] array) {
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+
+
+
+=======
+>>>>>>> 35193e93dfff2841c43b39e0af6cca07c21fdc1f
 // Counting Sorting in java
 
 public class solution {
@@ -168,5 +209,9 @@ public class solution {
 }
 
 
+<<<<<<< HEAD
 
                                                                                                   
+=======
+                                                                                                  
+>>>>>>> 35193e93dfff2841c43b39e0af6cca07c21fdc1f
